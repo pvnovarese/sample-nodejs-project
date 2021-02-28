@@ -10,14 +10,14 @@ Forget about the boilerplate stuff and get started on your project.
 
 ## Highlights
 * Backwards compatible Javascript through Babel. Modify `.babelrc` to update its configuration.
-* **Linter** thanks to [ESlint](http://eslint.org/). Modify `.eslintrc` to update the linting configuration.
-* **Unit Testing** thanks to [Mocha](https://mochajs.org/)
+* **Linting** thanks to [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.
+* **Unit Testing** thanks to [Mocha](https://mochajs.org/).
 * **Unit Testing Coverage** thanks for [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.
-* **Unit Testing Coverage reporting** to [CodeClimate](https://codeclimate.com/)
-* **Standard Commit Messages** through [commitizen](https://github.com/commitizen/cz-cli)
-* **Semantic releases** through [semantinc-release](https://github.com/semantic-release/semantic-release). Modify `release.config.js` to update its configuration.
+* **Unit Testing Coverage reporting** through [CodeClimate](https://codeclimate.com/).
+* **Standard Commit Messages** through [commitizen](https://github.com/commitizen/cz-cli).
+* **Automated releases** through [semantinc-release](https://github.com/semantic-release/semantic-release). Modify `release.config.js` to update its configuration.
 * **Github Actions** for PR commits: linting, testing, coverage, CodeClimate code quality
-* **Github Actions** for merging PRs: automated releases (Github tagging only)
+* **Github Actions** for merging PRs: automated releases (Github tagging only).
 
 ## Setup
 
