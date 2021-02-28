@@ -51,7 +51,13 @@ Besides the instructions above, do the following:
   * `CC_TEST_REPORTER_ID`: Once you add your repo to [CodeClimate](https://codeclimate.com/), go to Repo Settings -> Test Coverage. Get the `Test Reporter ID` from there. This is needed to send the test coverage to CodeClimate.
 
 ## How-tos
-Testing semantic releases locally
+* Taking advantage of commitizen auto-formatting
+```bash
+# instead of git commit, use
+git cz
+```
+
+* Testing semantic releases locally
 ```bash
 GITHUB_TOKEN=your_token npx semantic-release --dry-run
 ```
