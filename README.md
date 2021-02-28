@@ -1,10 +1,10 @@
-# simple-nodejs-app
+# sample-nodejs-project
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Maintainability](https://api.codeclimate.com/v1/badges/07d11a0ea4e36c1eb61e/maintainability)](https://codeclimate.com/github/elfrank/simple-nodejs-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/07d11a0ea4e36c1eb61e/test_coverage)](https://codeclimate.com/github/elfrank/simple-nodejs-app/test_coverage)
 
-**simple-nodejs-project** gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.
+**sample-nodejs-project** gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.
 
 Forget about the boilerplate stuff and get started on your project.
 
