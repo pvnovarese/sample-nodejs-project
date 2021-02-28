@@ -10,8 +10,10 @@
   },
   "private": false,
   "files": [
+    "src/**/*",
     "README.md",
     "CHANGELOG.md",
+    "LICENSE.md",
     "package.json",
     "package-lock.json"
   ],
