@@ -10,9 +10,9 @@ Forget about the boilerplate stuff and get started on your project.
 
 ## Highlights
 * **Backwards compatible Javascript** through [Babel](https://babeljs.io/). Modify `.babelrc` to update its configuration.
-* **Linting** thanks to [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.
-* **Unit Testing** thanks to [Mocha](https://mochajs.org/).
-* **Unit Testing Coverage** thanks for [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.
+* **Linting** through [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.
+* **Unit Testing** through [Mocha](https://mochajs.org/).
+* **Unit Testing Coverage** through [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.
 * **Unit Testing Coverage reporting** through [CodeClimate](https://codeclimate.com/).
 * **Standard Commit Messages** through [commitizen](https://github.com/commitizen/cz-cli).
 * **Automated releases** through [semantinc-release](https://github.com/semantic-release/semantic-release). Modify `release.config.js` to update its configuration.
