@@ -16,7 +16,7 @@ jobs:
 
     runs-on: ubuntu-latest
     # Waits for test jobs for each Node.js version to complete
-    needs: [build]
+    #needs: [build]
 
     steps:
     - name: Checkout
