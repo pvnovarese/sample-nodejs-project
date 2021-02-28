@@ -53,7 +53,9 @@ jobs:
       run: npm ci
 
     - name: Release
-      run: npx semantic-release --dry-run
+      # You can use --dry-run for testing your pipeline
+      # run: npx semantic-release --dry-run
+      run: npx semantic-release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
