@@ -1,15 +1,15 @@
 # simple-nodejs-app
 
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Maintainability](https://api.codeclimate.com/v1/badges/07d11a0ea4e36c1eb61e/maintainability)](https://codeclimate.com/github/elfrank/simple-nodejs-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/07d11a0ea4e36c1eb61e/test_coverage)](https://codeclimate.com/github/elfrank/simple-nodejs-app/test_coverage)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 **simple-nodejs-project** gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.
 
 Forget about the boilerplate stuff and get started on your project.
 
 ## Highlights
-* Backwards compatible Javascript through Babel. Modify `.babelrc` to update its configuration.
+* **Backwards compatible Javascript** through [Babel](https://babeljs.io/). Modify `.babelrc` to update its configuration.
 * **Linting** thanks to [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.
 * **Unit Testing** thanks to [Mocha](https://mochajs.org/).
 * **Unit Testing Coverage** thanks for [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.
@@ -41,13 +41,16 @@ npm install
 ```
 
 ### If you forked this repo for your own project
-1. Delete CHANGELOG.md. It will be regenerated in your first release
-2. Set the `version` field in `package.json` to `1.0.0`
-3. Update attributes in `package.json`
-4. Update the `README.md` accordingly
+Besides the instructions above, do the following:
+1. Delete CHANGELOG.md. It will be regenerated in your first release.
+2. Set the `version` field in `package.json` to `1.0.0`.
+3. Update attributes in `package.json`.
+4. Update the `README.md` accordingly.
+5. Generate the following secrets for your Github Actions (Repo -> Settings -> Secrets)
+  * `GH_TOKEN`: Create a [personal token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). This is needed for the automated semantic releases.
+  * `CC_TEST_REPORTER_ID`: Once you add your repo to [CodeClimate](https://codeclimate.com/), go to Repo Settings -> Test Coverage. Get the `Test Reporter ID` from there. This is needed to send the test coverage to CodeClimate.
 
 ## How-tos
-
 Testing semantic releases locally
 ```bash
 GITHUB_TOKEN=your_token npx semantic-release --dry-run
