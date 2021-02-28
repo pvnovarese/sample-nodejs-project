@@ -39,7 +39,7 @@ jobs:
       with:
         node-version: '14.x'
     - run: npm ci
-    - uses: paambaati/codeclimate-action@v2.2.4
+    - uses: paambaati/codeclimate-action@v2.5.7
       env:
         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
