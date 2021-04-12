@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | sample-nodejs-project</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#operations">operations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sum">sum</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="sample-nodejs-project">sample-nodejs-project</h1><p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
+<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability" alt="Maintainability"></a>
+<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage" alt="Test Coverage"></a></p>
+<p><strong>sample-nodejs-project</strong> gets you started with a <a href="https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html">walking skeleton</a> for your next node.js library or app.</p>
+<p>Forget about the boilerplate stuff and get started on your project.</p>
+<h2 id="highlights">Highlights</h2><ul>
+<li><strong>Backwards compatible Javascript</strong> through <a href="https://babeljs.io/">Babel</a>. Modify <code>.babelrc</code> to update its configuration.</li>
+<li><strong>Linting</strong> through <a href="http://eslint.org/">ESlint</a>. Modify <code>.eslintrc</code> to update its configuration.</li>
+<li><strong>Unit Testing</strong> through <a href="https://mochajs.org/">Mocha</a>.</li>
+<li><strong>Unit Testing Coverage</strong> through <a href="https://github.com/istanbuljs/nyc">Istanbul</a>. Modify <code>.nycrc.json</code> to update its configuration.</li>
+<li><strong>Unit Testing Coverage reporting</strong> through <a href="https://codeclimate.com/">CodeClimate</a>.</li>
+<li><strong>Standard Commit Messages</strong> through <a href="https://github.com/commitizen/cz-cli">commitizen</a>.</li>
+<li><strong>Automated releases</strong> through <a href="https://github.com/semantic-release/semantic-release">semantinc-release</a>. Modify <code>release.config.js</code> to update its configuration.</li>
+<li><strong>Github Actions</strong> for PR commits: linting, testing, coverage, CodeClimate code quality</li>
+<li><strong>Github Actions</strong> for merging PRs: automated releases (Github tagging only).</li>
+</ul>
+<h2 id="setup">Setup</h2><p>Install <a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager)</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint"># install the version specified in .nvmrc
+nvm install v14.16.0
+
+# set the version in .nvmrc in your current envirnonment
+nvm use</code>
+</code></pre>
+<p>The scripts expect the following packages to be installed globally</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">npm install -g commitizen</code>
+</code></pre>
+<p>Install packages</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">npm install</code>
+</code></pre>
+<h3 id="if-you-forked-this-repo-for-your-own-project">If you forked this repo for your own project</h3><p>Besides the instructions above, do the following:</p>
+<ol>
+<li>Delete CHANGELOG.md. It will be regenerated in your first release.</li>
+<li>Set the <code>version</code> field in <code>package.json</code> to <code>1.0.0</code>.</li>
+<li>Update attributes in <code>package.json</code>.</li>
+<li>Update the <code>README.md</code> accordingly.</li>
+<li>Generate the following secrets for your Github Actions (Repo -&gt; Settings -&gt; Secrets)<ul>
+<li><code>GH_TOKEN</code>: Create a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">personal token</a>. This is needed for the automated semantic releases.</li>
+<li><code>CC_TEST_REPORTER_ID</code>: Once you add your repo to <a href="https://codeclimate.com/">CodeClimate</a>, go to Repo Settings -&gt; Test Coverage. Get the <code>Test Reporter ID</code> from there. This is needed to send the test coverage to CodeClimate.</li>
+</ul>
+</li>
+</ol>
+<h2 id="how-tos">How-tos</h2><ul>
+<li><p>Taking advantage of commitizen auto-formatting</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint"># instead of git commit, use
+git cz</code>
+</code></pre>
+</li>
+<li><p>Testing semantic releases locally</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">GITHUB_TOKEN=your_token npx semantic-release --dry-run</code>
+</code></pre>
+</li>
+</ul>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
