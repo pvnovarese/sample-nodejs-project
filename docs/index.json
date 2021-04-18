@@ -566,16 +566,63 @@
   {
     "__docId__": 48,
     "kind": "file",
-    "name": "src/operations/sum.js",
-    "content": "function sum(a, b) {\n  return a + b;\n}\n\nexport default sum;\n",
+    "name": "src/operations/subtract.js",
+    "content": "function subtract(a, b) {\n  return a - b;\n}\n\nexport default subtract;\n",
     "static": true,
-    "longname": "/Users/frank/Projects/sample-nodejs-project/src/operations/sum.js",
+    "longname": "/Users/frank/Code/simple-nodejs-app/src/operations/subtract.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "__docId__": 49,
+    "kind": "function",
+    "name": "subtract",
+    "memberof": "src/operations/subtract.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/operations/subtract.js~subtract",
+    "access": "public",
+    "export": true,
+    "importPath": "sample-nodejs-project/src/operations/subtract.js",
+    "importStyle": "subtract",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/operations/sum.js",
+    "content": "function sum(a, b) {\n  return a + b;\n}\n\nexport default sum;\n",
+    "static": true,
+    "longname": "/Users/frank/Code/simple-nodejs-app/src/operations/sum.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
     "kind": "function",
     "name": "sum",
     "memberof": "src/operations/sum.js",
@@ -611,17 +658,28 @@
     }
   },
   {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/operations.js",
+    "content": "import sum from './operations/sum.js';\nimport subtract from './operations/subtract.js';\n\nexport {\n  sum,\n  subtract,\n};\n",
+    "static": true,
+    "longname": "/Users/frank/Code/simple-nodejs-app/src/operations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
     "kind": "index",
     "content": "# sample-nodejs-project\n\n[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)\n[![Maintainability](https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability)](https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability)\n[![Test Coverage](https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage)](https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage)\n\n**sample-nodejs-project** gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.\n\nForget about the boilerplate stuff and get started on your project.\n\n## Highlights\n* **Backwards compatible Javascript** through [Babel](https://babeljs.io/). Modify `.babelrc` to update its configuration.\n* **Linting** through [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.\n* **Unit Testing** through [Mocha](https://mochajs.org/).\n* **Unit Testing Coverage** through [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.\n* **Unit Testing Coverage reporting** through [CodeClimate](https://codeclimate.com/).\n* **Standard Commit Messages** through [commitizen](https://github.com/commitizen/cz-cli).\n* **Automated releases** through [semantinc-release](https://github.com/semantic-release/semantic-release). Modify `release.config.js` to update its configuration.\n* **Github Actions** for PR commits: linting, testing, coverage, CodeClimate code quality\n* **Github Actions** for merging PRs: automated releases (Github tagging only).\n\n## Setup\n\nInstall [nvm](https://github.com/nvm-sh/nvm) (node version manager)\n```bash\n# install the version specified in .nvmrc\nnvm install v14.16.0\n\n# set the version in .nvmrc in your current envirnonment\nnvm use\n```\n\nThe scripts expect the following packages to be installed globally\n```bash\nnpm install -g commitizen\n```\n\nInstall packages\n```bash\nnpm install\n```\n\n### If you forked this repo for your own project\nBesides the instructions above, do the following:\n1. Delete CHANGELOG.md. It will be regenerated in your first release.\n2. Set the `version` field in `package.json` to `1.0.0`.\n3. Update attributes in `package.json`.\n4. Update the `README.md` accordingly.\n5. Generate the following secrets for your Github Actions (Repo -> Settings -> Secrets)\n  * `GH_TOKEN`: Create a [personal token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). This is needed for the automated semantic releases.\n  * `CC_TEST_REPORTER_ID`: Once you add your repo to [CodeClimate](https://codeclimate.com/), go to Repo Settings -> Test Coverage. Get the `Test Reporter ID` from there. This is needed to send the test coverage to CodeClimate.\n\n## How-tos\n* Taking advantage of commitizen auto-formatting\n```bash\n# instead of git commit, use\ngit cz\n```\n\n* Testing semantic releases locally\n```bash\nGITHUB_TOKEN=your_token npx semantic-release --dry-run\n```",
-    "longname": "/Users/frank/Projects/sample-nodejs-project/README.md",
+    "longname": "/Users/frank/Code/simple-nodejs-app/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"sample-nodejs-project\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"lint\": \"./node_modules/.bin/eslint\",\n    \"test\": \"./node_modules/.bin/mocha --require @babel/register @babel/polyfill 'specs/**/**.spec.js'\",\n    \"test:coverage\": \"nyc npm run test\"\n  },\n  \"private\": false,\n  \"files\": [\n    \"src/**/*\",\n    \"README.md\",\n    \"CHANGELOG.md\",\n    \"LICENSE.md\",\n    \"package.json\",\n    \"package-lock.json\"\n  ],\n  \"author\": \"Francisco Avila\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.13.8\",\n    \"@babel/node\": \"^7.13.0\",\n    \"@babel/polyfill\": \"^7.12.1\",\n    \"@babel/preset-env\": \"^7.13.8\",\n    \"@babel/register\": \"^7.13.8\",\n    \"@commitlint/cli\": \"^12.0.1\",\n    \"@commitlint/config-conventional\": \"^12.0.1\",\n    \"@semantic-release/changelog\": \"^5.0.1\",\n    \"@semantic-release/commit-analyzer\": \"^8.0.1\",\n    \"@semantic-release/git\": \"^9.0.0\",\n    \"@semantic-release/github\": \"^7.2.0\",\n    \"@semantic-release/npm\": \"^7.0.10\",\n    \"@semantic-release/release-notes-generator\": \"^9.0.1\",\n    \"chai\": \"^4.3.0\",\n    \"cz-conventional-changelog\": \"^3.3.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^7.21.0\",\n    \"eslint-config-airbnb\": \"^18.2.1\",\n    \"eslint-plugin-import\": \"^2.22.1\",\n    \"eslint-plugin-jsx-a11y\": \"^6.4.1\",\n    \"eslint-plugin-react\": \"^7.22.0\",\n    \"eslint-plugin-react-hooks\": \"^1.7.0\",\n    \"mocha\": \"^8.3.0\",\n    \"nyc\": \"^15.1.0\",\n    \"semantic-release\": \"^17.4.0\"\n  },\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  }\n}\n",
-    "longname": "/Users/frank/Projects/sample-nodejs-project/package.json",
+    "content": "{\n  \"name\": \"sample-nodejs-project\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"type\": \"module\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"lint\": \"./node_modules/.bin/eslint\",\n    \"test\": \"./node_modules/.bin/mocha --require @babel/register @babel/polyfill 'specs/**/**.spec.js'\",\n    \"test:coverage\": \"nyc npm run test\"\n  },\n  \"private\": false,\n  \"files\": [\n    \"src/**/*\",\n    \"README.md\",\n    \"CHANGELOG.md\",\n    \"LICENSE.md\",\n    \"package.json\",\n    \"package-lock.json\"\n  ],\n  \"author\": \"Francisco Avila\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.13.8\",\n    \"@babel/node\": \"^7.13.0\",\n    \"@babel/polyfill\": \"^7.12.1\",\n    \"@babel/preset-env\": \"^7.13.8\",\n    \"@babel/register\": \"^7.13.8\",\n    \"@commitlint/cli\": \"^12.0.1\",\n    \"@commitlint/config-conventional\": \"^12.0.1\",\n    \"@semantic-release/changelog\": \"^5.0.1\",\n    \"@semantic-release/commit-analyzer\": \"^8.0.1\",\n    \"@semantic-release/git\": \"^9.0.0\",\n    \"@semantic-release/github\": \"^7.2.0\",\n    \"@semantic-release/npm\": \"^7.0.10\",\n    \"@semantic-release/release-notes-generator\": \"^9.0.1\",\n    \"chai\": \"^4.3.0\",\n    \"cz-conventional-changelog\": \"^3.3.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^7.21.0\",\n    \"eslint-config-airbnb\": \"^18.2.1\",\n    \"eslint-plugin-import\": \"^2.22.1\",\n    \"eslint-plugin-jsx-a11y\": \"^6.4.1\",\n    \"eslint-plugin-react\": \"^7.22.0\",\n    \"eslint-plugin-react-hooks\": \"^1.7.0\",\n    \"mocha\": \"^8.3.0\",\n    \"nyc\": \"^15.1.0\",\n    \"semantic-release\": \"^17.4.0\"\n  },\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  }\n}\n",
+    "longname": "/Users/frank/Code/simple-nodejs-app/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"

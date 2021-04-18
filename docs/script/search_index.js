@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "sample-nodejs-project/src/operations/subtract.js~subtract",
+    "function/index.html#static-function-subtract",
+    "<span>subtract</span> <span class=\"search-result-import-path\">sample-nodejs-project/src/operations/subtract.js</span>",
+    "function"
+  ],
+  [
     "sample-nodejs-project/src/operations/sum.js~sum",
     "function/index.html#static-function-sum",
     "<span>sum</span> <span class=\"search-result-import-path\">sample-nodejs-project/src/operations/sum.js</span>",
@@ -286,6 +292,18 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "src/operations.js",
+    "file/src/operations.js.html",
+    "src/operations.js",
+    "file"
+  ],
+  [
+    "src/operations/subtract.js",
+    "file/src/operations/subtract.js.html",
+    "src/operations/subtract.js",
+    "file"
   ],
   [
     "src/operations/sum.js",
