@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import subtract from '../../src/operations/subtract.js';
+import { subtract } from '../../src/operations.js';
 
 describe('#subtract', () => {
   it('returns the subtraction of two positive integers', () => {

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import sum from '../../src/operations/sum.js';
+import { sum } from '../../src/operations.js';
 
 describe('#sum', () => {
   it('returns the sum of two positive integers', () => {
