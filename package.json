@@ -2,6 +2,7 @@
   "name": "sample-nodejs-project",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "docs": "./node_modules/.bin/esdoc",
