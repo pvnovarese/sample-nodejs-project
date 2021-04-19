@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { subtract } from '../../src/operations';
+import Operations from '../../src/operations';
 
 describe('#subtract', () => {
   it('returns the subtraction of two positive integers', () => {
-    expect(subtract(1, 3)).to.equal(-2);
+    expect(Operations.subtract(1, 3)).to.equal(-2);
   });
 });

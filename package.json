@@ -2,11 +2,11 @@
   "name": "sample-nodejs-project",
   "version": "1.3.0",
   "description": "",
-  "main": "lib/cjs/operations.js",
-  "module": "lib/esm/operations.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc -p tsconfig.esm.json && ./node_modules/typescript/bin/tsc -p tsconfig.cjs.json",
-    "docs": "./node_modules/.bin/typedoc src/operations.ts",
+    "docs": "./node_modules/.bin/typedoc src/index.ts",
     "lint": "./node_modules/.bin/eslint",
     "test": "env TS_NODE_PROJECT=\"tsconfig.testing.json\" mocha --require ts-node/register 'specs/**/*.spec.ts'",
     "test:coverage": "nyc npm run test"

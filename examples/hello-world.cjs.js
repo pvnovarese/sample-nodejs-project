@@ -1,4 +1,5 @@
-const { sum, subtract } = require('../lib/cjs/operations');
+const Operations = require('../lib/cjs/index').default;
+const { sum, subtract } = Operations;
 
 const a = 4;
 const b = 3;
