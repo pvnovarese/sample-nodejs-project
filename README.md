@@ -10,7 +10,9 @@ Forget about the boilerplate stuff and get started on your project.
 
 ## Highlights
 * **Backwards compatible Javascript** through [Babel](https://babeljs.io/). Modify `.babelrc` to update its configuration.
+* **Typescript support**. Modify `.tsconfig.json`, `tsconfig.cjs.json` and `tsconfig.esm.json` to update its configuration.
 * **Linting** through [ESlint](http://eslint.org/). Modify `.eslintrc` to update its configuration.
+* **Docs Generation** through [Typedoc](https://typedoc.org/).
 * **Unit Testing** through [Mocha](https://mochajs.org/).
 * **Unit Testing Coverage** through [Istanbul](https://github.com/istanbuljs/nyc). Modify `.nycrc.json` to update its configuration.
 * **Unit Testing Coverage reporting** through [CodeClimate](https://codeclimate.com/).
