@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { sum } from '../../src/operations';
+import Operations from '../../src/operations';
 
 describe('#sum', () => {
   it('returns the sum of two positive integers', () => {
-    expect(sum(1, 3)).to.equal(4);
+    expect(Operations.sum(1, 3)).to.equal(4);
   });
 });
