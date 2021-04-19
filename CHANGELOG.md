@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/elfrank/sample-nodejs-project/compare/v1.2.0...v1.3.0) (2021-04-19)
+
+
+### Features
+
+* **docs:** adds typedoc for documentation generation with TS support ([d0efe70](https://github.com/elfrank/sample-nodejs-project/commit/d0efe70e333276f00995ceb6d7f59085201fa207))
+
 # [1.2.0](https://github.com/elfrank/sample-nodejs-project/compare/v1.1.0...v1.2.0) (2021-04-19)
 
 
