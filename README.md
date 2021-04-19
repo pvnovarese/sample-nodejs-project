@@ -1,10 +1,11 @@
 # sample-nodejs-project
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Maintainability](https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability)](https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage)](https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage)
 
-**sample-nodejs-project** gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.
+[**sample-nodejs-project**](https://github.com/elfrank/sample-nodejs-project) gets you started with a [walking skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html) for your next node.js library or app.
 
 Forget about the boilerplate stuff and get started on your project.
 
