@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/elfrank/sample-nodejs-project/compare/v1.1.0...v1.2.0) (2021-04-19)
+
+
+### Features
+
+* **example:** add example to run compiled TS lib as CommonJS module ([96b84bf](https://github.com/elfrank/sample-nodejs-project/commit/96b84bfd938294cbf6fd19e3910f1975e62adc1c))
+
 # [1.1.0](https://github.com/elfrank/sample-nodejs-project/compare/v1.0.0...v1.1.0) (2021-04-19)
 
 
