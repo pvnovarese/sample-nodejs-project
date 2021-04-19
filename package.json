@@ -6,7 +6,7 @@
   "module": "lib/esm/operations.js",
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc -p tsconfig.esm.json && ./node_modules/typescript/bin/tsc -p tsconfig.cjs.json",
-    "docs": "./node_modules/.bin/esdoc",
+    "docs": "./node_modules/.bin/typedoc src/operations.ts",
     "lint": "./node_modules/.bin/eslint",
     "test": "env TS_NODE_PROJECT=\"tsconfig.testing.json\" mocha --require ts-node/register 'specs/**/*.spec.ts'",
     "test:coverage": "nyc npm run test"
@@ -43,8 +43,6 @@
     "@typescript-eslint/parser": "^4.22.0",
     "chai": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "esdoc": "^1.1.0",
-    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^7.21.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -56,6 +54,7 @@
     "nyc": "^15.1.0",
     "semantic-release": "^17.4.0",
     "ts-node": "^9.1.1",
+    "typedoc": "^0.20.35",
     "typescript": "^4.2.4"
   },
   "config": {

@@ -1,105 +1,186 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="default no-js">
 <head>
-  <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | sample-nodejs-project</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
-  <script src="script/prettify/prettify.js"></script>
-  <script src="script/manual.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>sample-nodejs-project</title>
+	<meta name="description" content="Documentation for sample-nodejs-project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
-<body class="layout-container" data-ice="rootContainer">
-
+<body>
 <header>
-  <a href="./">Home</a>
-  
-  <a href="identifiers.html">Reference</a>
-  <a href="source.html">Source</a>
-  
-  <div class="search-box">
-  <span>
-    <img src="./image/search.png">
-    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
-  </span>
-    <ul class="search-result"></ul>
-  </div>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">sample-nodejs-project</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>sample-nodejs-project</h1>
+		</div>
+	</div>
 </header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#sample-nodejs-project" id="sample-nodejs-project" style="color: inherit; text-decoration: none;">
+					<h1>sample-nodejs-project</h1>
+				</a>
+				<p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
+					<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability" alt="Maintainability"></a>
+				<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage" alt="Test Coverage"></a></p>
+				<p><strong>sample-nodejs-project</strong> gets you started with a <a href="https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html">walking skeleton</a> for your next node.js library or app.</p>
+				<p>Forget about the boilerplate stuff and get started on your project.</p>
+				<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
+					<h2>Highlights</h2>
+				</a>
+				<ul>
+					<li><strong>Backwards compatible Javascript</strong> through <a href="https://babeljs.io/">Babel</a>. Modify <code>.babelrc</code> to update its configuration.</li>
+					<li><strong>Linting</strong> through <a href="http://eslint.org/">ESlint</a>. Modify <code>.eslintrc</code> to update its configuration.</li>
+					<li><strong>Unit Testing</strong> through <a href="https://mochajs.org/">Mocha</a>.</li>
+					<li><strong>Unit Testing Coverage</strong> through <a href="https://github.com/istanbuljs/nyc">Istanbul</a>. Modify <code>.nycrc.json</code> to update its configuration.</li>
+					<li><strong>Unit Testing Coverage reporting</strong> through <a href="https://codeclimate.com/">CodeClimate</a>.</li>
+					<li><strong>Standard Commit Messages</strong> through <a href="https://github.com/commitizen/cz-cli">commitizen</a>.</li>
+					<li><strong>Automated releases</strong> through <a href="https://github.com/semantic-release/semantic-release">semantinc-release</a>. Modify <code>release.config.js</code> to update its configuration.</li>
+					<li><strong>Github Actions</strong> for PR commits: linting, testing, coverage, CodeClimate code quality</li>
+					<li><strong>Github Actions</strong> for merging PRs: automated releases (Github tagging only).</li>
+				</ul>
+				<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
+					<h2>Setup</h2>
+				</a>
+				<p>Install <a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager)</p>
+				<pre><code class="language-bash"><span style="color: #008000"># install the version specified in .nvmrc</span>
+<span style="color: #000000">nvm install v14.16.0</span>
 
-<nav class="navigation" data-ice="nav"><div>
-  <ul>
-    
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#operations">operations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-subtract">subtract</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sum">sum</a></span></span></li>
-</ul>
+<span style="color: #008000"># set the version in .nvmrc in your current envirnonment</span>
+<span style="color: #000000">nvm use</span>
+</code></pre>
+				<p>The scripts expect the following packages to be installed globally</p>
+				<pre><code class="language-bash"><span style="color: #000000">npm install -g commitizen</span>
+</code></pre>
+				<p>Install packages</p>
+				<pre><code class="language-bash"><span style="color: #000000">npm install</span>
+</code></pre>
+				<a href="#scripts" id="scripts" style="color: inherit; text-decoration: none;">
+					<h2>Scripts</h2>
+				</a>
+				<pre><code class="language-bash"><span style="color: #008000"># run TypeScript compilation process</span>
+<span style="color: #000000">npm run build</span>
+
+<span style="color: #008000"># build docs</span>
+<span style="color: #000000">npm run docs</span>
+
+<span style="color: #008000"># run linter</span>
+<span style="color: #000000">npm run lint src/</span>
+
+<span style="color: #008000"># run unit tests without coverage</span>
+<span style="color: #000000">npm run </span><span style="color: #795E26">test</span>
+
+<span style="color: #008000"># run unit tests with coverage</span>
+<span style="color: #000000">npm run test:coverage</span>
+
+<span style="color: #008000"># run example</span>
+<span style="color: #000000">node examples/hello-world.cjs.js</span>
+
+</code></pre>
+				<a href="#if-you-forked-this-repo-for-your-own-project" id="if-you-forked-this-repo-for-your-own-project" style="color: inherit; text-decoration: none;">
+					<h3>If you forked this repo for your own project</h3>
+				</a>
+				<p>Besides the instructions above, do the following:</p>
+				<ol>
+					<li>Delete CHANGELOG.md. It will be regenerated in your first release.</li>
+					<li>Set the <code>version</code> field in <code>package.json</code> to <code>1.0.0</code>.</li>
+					<li>Update attributes in <code>package.json</code>.</li>
+					<li>Update the <code>README.md</code> accordingly.</li>
+					<li>Generate the following secrets for your Github Actions (Repo -&gt; Settings -&gt; Secrets)</li>
+				</ol>
+				<ul>
+					<li><code>GH_TOKEN</code>: Create a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">personal token</a>. This is needed for the automated semantic releases.</li>
+					<li><code>CC_TEST_REPORTER_ID</code>: Once you add your repo to <a href="https://codeclimate.com/">CodeClimate</a>, go to Repo Settings -&gt; Test Coverage. Get the <code>Test Reporter ID</code> from there. This is needed to send the test coverage to CodeClimate.</li>
+				</ul>
+				<a href="#how-tos" id="how-tos" style="color: inherit; text-decoration: none;">
+					<h2>How-tos</h2>
+				</a>
+				<ul>
+					<li><p>Taking advantage of commitizen auto-formatting</p>
+						<pre><code class="language-bash"><span style="color: #008000"># instead of git commit, use</span>
+<span style="color: #000000">git cz</span>
+</code></pre>
+					</li>
+					<li><p>Testing semantic releases locally</p>
+						<pre><code class="language-bash"><span style="color: #000000">GITHUB_TOKEN=your_token npx semantic-release --dry-run</span>
+</code></pre>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#subtract" class="tsd-kind-icon">subtract</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sum" class="tsd-kind-icon">sum</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </div>
-</nav>
-
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="sample-nodejs-project">sample-nodejs-project</h1><p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
-<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability" alt="Maintainability"></a>
-<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage" alt="Test Coverage"></a></p>
-<p><strong>sample-nodejs-project</strong> gets you started with a <a href="https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html">walking skeleton</a> for your next node.js library or app.</p>
-<p>Forget about the boilerplate stuff and get started on your project.</p>
-<h2 id="highlights">Highlights</h2><ul>
-<li><strong>Backwards compatible Javascript</strong> through <a href="https://babeljs.io/">Babel</a>. Modify <code>.babelrc</code> to update its configuration.</li>
-<li><strong>Linting</strong> through <a href="http://eslint.org/">ESlint</a>. Modify <code>.eslintrc</code> to update its configuration.</li>
-<li><strong>Unit Testing</strong> through <a href="https://mochajs.org/">Mocha</a>.</li>
-<li><strong>Unit Testing Coverage</strong> through <a href="https://github.com/istanbuljs/nyc">Istanbul</a>. Modify <code>.nycrc.json</code> to update its configuration.</li>
-<li><strong>Unit Testing Coverage reporting</strong> through <a href="https://codeclimate.com/">CodeClimate</a>.</li>
-<li><strong>Standard Commit Messages</strong> through <a href="https://github.com/commitizen/cz-cli">commitizen</a>.</li>
-<li><strong>Automated releases</strong> through <a href="https://github.com/semantic-release/semantic-release">semantinc-release</a>. Modify <code>release.config.js</code> to update its configuration.</li>
-<li><strong>Github Actions</strong> for PR commits: linting, testing, coverage, CodeClimate code quality</li>
-<li><strong>Github Actions</strong> for merging PRs: automated releases (Github tagging only).</li>
-</ul>
-<h2 id="setup">Setup</h2><p>Install <a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager)</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint"># install the version specified in .nvmrc
-nvm install v14.16.0
-
-# set the version in .nvmrc in your current envirnonment
-nvm use</code>
-</code></pre>
-<p>The scripts expect the following packages to be installed globally</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint">npm install -g commitizen</code>
-</code></pre>
-<p>Install packages</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint">npm install</code>
-</code></pre>
-<h3 id="if-you-forked-this-repo-for-your-own-project">If you forked this repo for your own project</h3><p>Besides the instructions above, do the following:</p>
-<ol>
-<li>Delete CHANGELOG.md. It will be regenerated in your first release.</li>
-<li>Set the <code>version</code> field in <code>package.json</code> to <code>1.0.0</code>.</li>
-<li>Update attributes in <code>package.json</code>.</li>
-<li>Update the <code>README.md</code> accordingly.</li>
-<li>Generate the following secrets for your Github Actions (Repo -&gt; Settings -&gt; Secrets)<ul>
-<li><code>GH_TOKEN</code>: Create a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">personal token</a>. This is needed for the automated semantic releases.</li>
-<li><code>CC_TEST_REPORTER_ID</code>: Once you add your repo to <a href="https://codeclimate.com/">CodeClimate</a>, go to Repo Settings -&gt; Test Coverage. Get the <code>Test Reporter ID</code> from there. This is needed to send the test coverage to CodeClimate.</li>
-</ul>
-</li>
-</ol>
-<h2 id="how-tos">How-tos</h2><ul>
-<li><p>Taking advantage of commitizen auto-formatting</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint"># instead of git commit, use
-git cz</code>
-</code></pre>
-</li>
-<li><p>Testing semantic releases locally</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint">GITHUB_TOKEN=your_token npx semantic-release --dry-run</code>
-</code></pre>
-</li>
-</ul>
-</div>
-</div>
-
-<footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
 </footer>
-
-<script src="script/search_index.js"></script>
-<script src="script/search.js"></script>
-<script src="script/pretty-print.js"></script>
-<script src="script/inherited-summary.js"></script>
-<script src="script/test-summary.js"></script>
-<script src="script/inner-link.js"></script>
-<script src="script/patch-for-local.js"></script>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
