@@ -1,9 +1,7 @@
 import sum from './operations/sum';
 import subtract from './operations/subtract';
 
-const Operations = {
+export {
   sum,
   subtract,
 };
-
-export { Operations as default };
