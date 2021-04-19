@@ -61,17 +61,20 @@
 				<a href="#sample-nodejs-project" id="sample-nodejs-project" style="color: inherit; text-decoration: none;">
 					<h1>sample-nodejs-project</h1>
 				</a>
-				<p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
+				<p><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+					<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
 					<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/maintainability"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/maintainability" alt="Maintainability"></a>
 				<a href="https://codeclimate.com/github/elfrank/sample-nodejs-project/test_coverage"><img src="https://api.codeclimate.com/v1/badges/302ed2e8c61f4303e378/test_coverage" alt="Test Coverage"></a></p>
-				<p><strong>sample-nodejs-project</strong> gets you started with a <a href="https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html">walking skeleton</a> for your next node.js library or app.</p>
+				<p><a href="https://github.com/elfrank/sample-nodejs-project"><strong>sample-nodejs-project</strong></a> gets you started with a <a href="https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html">walking skeleton</a> for your next node.js library or app.</p>
 				<p>Forget about the boilerplate stuff and get started on your project.</p>
 				<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
 					<h2>Highlights</h2>
 				</a>
 				<ul>
 					<li><strong>Backwards compatible Javascript</strong> through <a href="https://babeljs.io/">Babel</a>. Modify <code>.babelrc</code> to update its configuration.</li>
+					<li><strong>Typescript support</strong>. Modify <code>.tsconfig.json</code>, <code>tsconfig.cjs.json</code> and <code>tsconfig.esm.json</code> to update its configuration.</li>
 					<li><strong>Linting</strong> through <a href="http://eslint.org/">ESlint</a>. Modify <code>.eslintrc</code> to update its configuration.</li>
+					<li><strong>Docs Generation</strong> through <a href="https://typedoc.org/">Typedoc</a>.</li>
 					<li><strong>Unit Testing</strong> through <a href="https://mochajs.org/">Mocha</a>.</li>
 					<li><strong>Unit Testing Coverage</strong> through <a href="https://github.com/istanbuljs/nyc">Istanbul</a>. Modify <code>.nycrc.json</code> to update its configuration.</li>
 					<li><strong>Unit Testing Coverage reporting</strong> through <a href="https://codeclimate.com/">CodeClimate</a>.</li>
@@ -84,17 +87,14 @@
 					<h2>Setup</h2>
 				</a>
 				<p>Install <a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager)</p>
-				<pre><code class="language-bash"><span style="color: #008000"># install the version specified in .nvmrc</span>
-<span style="color: #000000">nvm install v14.16.0</span>
+				<pre><code class="language-bash"><span style="color: #008000"># install and use the version specified in .nvmrc</span>
+<span style="color: #000000">nvm i</span>
 
-<span style="color: #008000"># set the version in .nvmrc in your current envirnonment</span>
-<span style="color: #000000">nvm use</span>
-</code></pre>
-				<p>The scripts expect the following packages to be installed globally</p>
-				<pre><code class="language-bash"><span style="color: #000000">npm install -g commitizen</span>
-</code></pre>
-				<p>Install packages</p>
-				<pre><code class="language-bash"><span style="color: #000000">npm install</span>
+<span style="color: #008000"># install global packages</span>
+<span style="color: #000000">npm install -g commitizen</span>
+
+<span style="color: #008000"># install node_modules</span>
+<span style="color: #000000">npm install</span>
 </code></pre>
 				<a href="#scripts" id="scripts" style="color: inherit; text-decoration: none;">
 					<h2>Scripts</h2>
@@ -118,8 +118,8 @@
 <span style="color: #000000">node examples/hello-world.cjs.js</span>
 
 </code></pre>
-				<a href="#if-you-forked-this-repo-for-your-own-project" id="if-you-forked-this-repo-for-your-own-project" style="color: inherit; text-decoration: none;">
-					<h3>If you forked this repo for your own project</h3>
+				<a href="#forking" id="forking" style="color: inherit; text-decoration: none;">
+					<h2>Forking</h2>
 				</a>
 				<p>Besides the instructions above, do the following:</p>
 				<ol>
@@ -159,8 +159,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#subtract" class="tsd-kind-icon">subtract</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sum" class="tsd-kind-icon">sum</a>
 					</li>
 				</ul>
 			</nav>
