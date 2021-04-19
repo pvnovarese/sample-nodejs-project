@@ -27,3 +27,6 @@ node_modules/
 
 # Mac tmp files
 .DS_Store
+
+# TypeScript
+tsconfig.tsbuildinfo

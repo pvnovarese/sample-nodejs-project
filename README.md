@@ -40,6 +40,29 @@ Install packages
 npm install
 ```
 
+## Scripts
+
+```bash
+# run TypeScript compilation process
+npm run build
+
+# build docs
+npm run docs
+
+# run linter
+npm run lint src/
+
+# run unit tests without coverage
+npm run test
+
+# run unit tests with coverage
+npm run test:coverage
+
+# run example
+node examples/hello-world.cjs.js
+
+```
+
 ### If you forked this repo for your own project
 Besides the instructions above, do the following:
 1. Delete CHANGELOG.md. It will be regenerated in your first release.
