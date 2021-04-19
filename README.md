@@ -23,20 +23,13 @@ Forget about the boilerplate stuff and get started on your project.
 
 Install [nvm](https://github.com/nvm-sh/nvm) (node version manager)
 ```bash
-# install the version specified in .nvmrc
-nvm install v14.16.0
+# install and use the version specified in .nvmrc
+nvm i
 
-# set the version in .nvmrc in your current envirnonment
-nvm use
-```
-
-The scripts expect the following packages to be installed globally
-```bash
+# install global packages
 npm install -g commitizen
-```
 
-Install packages
-```bash
+# install node_modules
 npm install
 ```
 
@@ -63,7 +56,7 @@ node examples/hello-world.cjs.js
 
 ```
 
-### If you forked this repo for your own project
+## Forking
 Besides the instructions above, do the following:
 1. Delete CHANGELOG.md. It will be regenerated in your first release.
 2. Set the `version` field in `package.json` to `1.0.0`.
