@@ -1,6 +1,6 @@
 {
   "name": "sample-nodejs-project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "lib/cjs/operations.js",
   "module": "lib/esm/operations.js",

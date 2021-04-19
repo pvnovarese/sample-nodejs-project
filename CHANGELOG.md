@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/elfrank/sample-nodejs-project/compare/v1.0.0...v1.1.0) (2021-04-19)
+
+
+### Features
+
+* **typescript:** convert project to TypeScript ([796c510](https://github.com/elfrank/sample-nodejs-project/commit/796c510a383e4b4ab140b481ec925cf3425298f1))
+
 # 1.0.0 (2021-02-28)
 
 
